@@ -1,0 +1,21 @@
+{
+  "name": "@micahgodbolt/perf-summit",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Micah Godbolt <mgodbolt@phase2technology.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.2.0"
+  }
+}
