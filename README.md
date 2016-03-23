@@ -1,7 +1,5 @@
 Functional Testing
-  Yeoman
-  Build
-  Categories
+  Verify function for calculating shipping
 
 VRT
   Mocha
@@ -16,7 +14,7 @@ Performance Testing
   https://github.com/SlexAxton/css-colorguard
   https://github.com/addyosmani/tmi
   https://github.com/axemclion/perfjankie
+  https://github.com/tkadlec/grunt-perfbudget
 
 Behavioral Tests
-  end to end Testing
-    click a model, fill out a form
+  Load home. click buy, select form, enter quantity, hit submit

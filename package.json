@@ -12,10 +12,21 @@
     "bower": "^1.7.7"
   },
   "devDependencies": {
-    "grunt": "^1.0.0-rc1",
+    "bluebird": "^3.3.4",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "grunt": "^0.4.1",
     "grunt-bower-concat": "^1.0.0",
     "grunt-contrib-connect": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-sass": "^1.1.0"
+    "grunt-mocha": "^0.4.15",
+    "grunt-perfbudget": "^0.1.8",
+    "grunt-sass": "^1.1.0",
+    "grunt-sass-lint": "^0.1.0",
+    "grunt-webdriver": "^1.0.0",
+    "mocha": "^2.4.5",
+    "selenium-standalone": "^4.7.0",
+    "webdrivercss": "^2.0.0-beta-rc1",
+    "webdriverio": "^3.4.0"
   }
 }

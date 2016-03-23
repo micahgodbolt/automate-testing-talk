@@ -3,6 +3,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-mocha');
+  grunt.loadNpmTasks('grunt-webdriver');
+  grunt.loadNpmTasks('grunt-sass-lint');
 
   grunt.initConfig({
 
@@ -82,6 +85,32 @@ module.exports = function(grunt) {
         },
       },
     },
+
+    mocha: {
+      test: {
+        src: ['test/functional.html'],
+      },
+      options: {
+        run: true,
+        reporter: 'Nyan'
+      },
+    },
+
+    webdriver: {
+     behavioral: {
+      configFile: './test/behavioral.conf.js'
+     },
+     visual: {
+      configFile: './test/visual.conf.js'
+     }
+   },
+
+   sasslint: {
+    options: {
+        //configFile: 'config/.sass-lint.yml',
+    },
+    target: ['sass/partials/*.scss']
+  },
  });
 
  grunt.registerTask('default', [
@@ -89,6 +118,13 @@ module.exports = function(grunt) {
    'bower_concat',
    'connect',
    'watch'
+   ]);
+
+ grunt.registerTask('test', [
+   "webdriver:behavioral",
+   "webdriver:visual",
+   "sasslint",
+   "mocha"
    ]);
 
 };

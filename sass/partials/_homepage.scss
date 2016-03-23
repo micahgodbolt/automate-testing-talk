@@ -1,0 +1,9 @@
+$gray: #999;
+
+.large-up-4 {
+  .column {
+    img {
+      box-shadow: 4px 4px 4px $gray;
+    }
+  }
+}
