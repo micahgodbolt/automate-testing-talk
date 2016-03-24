@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "bower install & grunt build",
-    "test": "grunt test"
+    "build": "./node_modules/.bin/bower install & ./node_modules/.bin/grunt build",
+    "test": "./node_modules/.bin/grunt test"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +18,7 @@
     "chai-as-promised": "^5.2.0",
     "grunt": "^0.4.1",
     "grunt-bower-concat": "^1.0.0",
+    "grunt-cli": "^1.1.0",
     "grunt-contrib-connect": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha": "^0.4.15",
