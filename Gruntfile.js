@@ -159,6 +159,10 @@ module.exports = function(grunt) {
    'connect',
    'watch'
    ]);
+ grunt.registerTask('build', [
+   'sass',
+   'bower_concat'
+   ]);
 
  grunt.registerTask('test', [
    "webdriver:behavioral",

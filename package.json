@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bower install & grunt build",
+    "test": "grunt test"
   },
   "author": "",
   "license": "ISC",
