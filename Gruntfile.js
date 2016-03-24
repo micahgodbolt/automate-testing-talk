@@ -6,6 +6,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mocha');
   grunt.loadNpmTasks('grunt-webdriver');
   grunt.loadNpmTasks('grunt-sass-lint');
+  grunt.loadNpmTasks('grunt-perfbudget');
+  grunt.loadNpmTasks('grunt-pagespeed');
+
 
   grunt.initConfig({
 
@@ -111,6 +114,43 @@ module.exports = function(grunt) {
     },
     target: ['sass/partials/*.scss']
   },
+
+  perfbudget: {
+    default: {
+      options: {
+        url: 'https://micah.codes/',
+        key: 'A.b00a893630f1df8f23606b6f93fab125',
+        budget: {
+          SpeedIndex: '1500',
+          render: '1500',
+          requestsDoc: '10',
+          bytesIn: '500000'
+        }
+      }
+    }
+  },
+
+  pagespeed: {
+    options: {
+      nokey: true
+    },
+    desktop: {
+      options: {
+        url: "https://micah.codes/",
+        locale: "en_GB",
+        strategy: "desktop",
+        threshold: 80
+      }
+    },
+    mobile: {
+      options: {
+        url: "https://micah.codes/",
+        locale: "en_GB",
+        strategy: "mobile",
+        threshold: 80
+      }
+    }
+  }
  });
 
  grunt.registerTask('default', [
@@ -124,7 +164,8 @@ module.exports = function(grunt) {
    "webdriver:behavioral",
    "webdriver:visual",
    "sasslint",
-   "mocha"
+   "mocha",
+   "perfbudget"
    ]);
 
 };

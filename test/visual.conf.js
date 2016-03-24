@@ -42,7 +42,7 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-        browserName: 'firefox'
+        browserName: 'chrome'
     }],
     //
     // ===================

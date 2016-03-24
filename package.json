@@ -20,6 +20,7 @@
     "grunt-contrib-connect": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha": "^0.4.15",
+    "grunt-pagespeed": "^2.0.0",
     "grunt-perfbudget": "^0.1.8",
     "grunt-sass": "^1.1.0",
     "grunt-sass-lint": "^0.1.0",
