@@ -1,19 +1,5 @@
 exports.config = {
-    // =================
-    // Service Providers
-    // =================
-    // WebdriverIO supports Sauce Labs, Browserstack and Testing Bot (other cloud providers
-    // should work too though). These services define specific user and key (or access key)
-    // values you need to put in here in order to connect to these services.
-    //
-    if (!process.env.LOCAL) {
-      user: 'micahgodbolt2',
-      key:  process.env.browserstack
-    }
-    //
-    // If you are using Sauce Labs WebdriverIO takes care about updating the job information
-    // once the test is done. This option is set to `true` per default.
-    //
+
     updateJob: true,
     //
     // ==================
@@ -134,3 +120,8 @@ exports.config = {
         console.log("\nSelenium process ended. Test suite complete");
     }
 };
+
+if (!process.env.LOCAL) {
+  exports.config.user = 'micahgodbolt2';
+  exports.config.key = 'process.env.browserstack';
+}
