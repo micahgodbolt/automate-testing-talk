@@ -5,12 +5,14 @@ script:
 - npm run build
 deploy:
   provider: s3
+  region: us-west-2
   access_key_id: AKIAJDLZCSMH4NV2722Q
   secret_access_key:
     secure: FnW7OQCQn90SdbpatFBJrc+rNDPTNs/IOZZZZna3xz9PgoZd5ytqogtqE3nPnl5nM3fhUxL6xjdwW5y9ij3LT5CYFaJ8ypxX/wR2Oq5xpO0oc5rJzBBYdVD3QMAR/2qxoE3+BaTygQU7hsOxB5oq0fetHHg/MC05iSx5I02or6BdbuiXIwa3VjdxBPrX7bYA0R9lCI6l57d8xCVuSqlPFCJyWBKJTF8wKLKx/qEIodNm12gHQhO11jHyV6gwnQHLMMtIAzBHWpd4uhVzr56raUg/tondAY8MRZxKki+HWIUcab1geop2TPTNAkpdL8qlAm3lJzevuxLTROTvhTHYFVGVeVVOZcV1NYv4kRsQwmHiD8jvBcoOzAmSk5k0gQBVH9zKa390ruYPJu56aD4RIKA5/3HMVJ/cbCWZh6IFVqNPwe+q4rlHA+m9TbtYckuFnjbRQgcveVMr4SS5KvMv7QQS9DnrkehwTeLkoO3PacqSA4AM43J81SisK8uH+gYh80Qsg+E/jeYYncZ5738FMmv+VXZS+OhCLNNexQdLb0IFHzXyggU4VxXkBGLJc/BLEZEhV0i2AyAqOagrlbpFoaAMwCOJqJwvwXbuFFmPz7+UgvTPAhDDnoI/CZN0kHWUEbT1c7mcY1hVE9Bda/YihJKQr72RWGz4ICohCdVWLbM=
   bucket: rwd-summit
   local-dir: public
   acl: public_read
+  skip_cleanup: true
   on:
     repo: micahgodbolt/rwd-summit
     branch: master
