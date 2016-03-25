@@ -6,8 +6,10 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    // user: 'webdriverio',
-    // key:  'xxxxxxxxxxxxxxxx-xxxxxx-xxxxx-xxxxxxxxx',
+    if (!process.env.LOCAL) {
+      user: 'micahgodbolt2',
+      key:  process.env.browserstack
+    }
     //
     // If you are using Sauce Labs WebdriverIO takes care about updating the job information
     // once the test is done. This option is set to `true` per default.

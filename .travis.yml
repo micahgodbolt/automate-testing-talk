@@ -16,3 +16,5 @@ deploy:
   on:
     repo: micahgodbolt/rwd-summit
     branch: master
+after_deploy:
+- npm run test
