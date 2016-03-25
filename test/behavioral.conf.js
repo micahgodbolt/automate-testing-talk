@@ -61,7 +61,7 @@ exports.config = {
     //
     // Shorten url command calls by setting a base url. If your url parameter starts with "/"
     // the base url gets prepended.
-    baseUrl: 'http://localhost:8000',
+    baseUrl: process.env.LOCAL ? 'http://localhost:8000' : 'https://s3-us-west-2.amazonaws.com/rwd-summit',
     //
     // Default timeout for all waitForXXX commands.
     waitforTimeout: 1000,

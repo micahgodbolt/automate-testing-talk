@@ -1,8 +1,13 @@
 describe("Shopping Cart", function() {
+
+	before(function() {
+		browser.url("/index.html");
+		return browser;
+	});
+
 	it("should return the correct size and quantity", function() {
 		return browser
-      .url('http://localhost:8000')
-      .click('[href="/our-product.html"]')
+      .click('[href="our-product.html"]')
       .click('//*[@id="size-select"]/option[2]')
       .setValue('#quantity-select', 23)
       .click('#buy-now')

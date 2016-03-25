@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "local": "LOCAL=1 ./node_modules/.bin/grunt",
+    "local_test": "LOCAL=1 ./node_modules/.bin/grunt test",
     "build": "./node_modules/.bin/bower install && ./node_modules/.bin/grunt build",
-    "test": "./node_modules/.bin/grunt test"
+    "test": "npm run build && ./node_modules/.bin/grunt test"
   },
   "author": "",
   "license": "ISC",

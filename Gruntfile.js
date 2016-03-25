@@ -118,13 +118,13 @@ module.exports = function(grunt) {
   perfbudget: {
     default: {
       options: {
-        url: 'https://micah.codes/',
+        url: 'https://s3-us-west-2.amazonaws.com/rwd-summit/index.html',
         key: 'A.b00a893630f1df8f23606b6f93fab125',
         budget: {
-          SpeedIndex: '1500',
-          render: '1500',
-          requestsDoc: '10',
-          bytesIn: '500000'
+          SpeedIndex: '2000',
+          render: '2000',
+          requestsDoc: '15',
+          bytesIn: '1500000'
         }
       }
     }
@@ -136,7 +136,7 @@ module.exports = function(grunt) {
     },
     desktop: {
       options: {
-        url: "https://micah.codes/",
+        url: "https://s3-us-west-2.amazonaws.com/rwd-summit/index.html",
         locale: "en_GB",
         strategy: "desktop",
         threshold: 80
@@ -144,7 +144,7 @@ module.exports = function(grunt) {
     },
     mobile: {
       options: {
-        url: "https://micah.codes/",
+        url: "https://s3-us-west-2.amazonaws.com/rwd-summit/index.html",
         locale: "en_GB",
         strategy: "mobile",
         threshold: 80

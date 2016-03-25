@@ -1,6 +1,6 @@
 describe("Home Page", function() {
   before(function() {
-		browser.url("http://localhost:8000/");
+		browser.url("/index.html");
 		return browser;
 	});
 
