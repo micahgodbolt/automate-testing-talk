@@ -3,7 +3,6 @@ node_js:
 - 4.3.1
 script:
 - npm run build
-- npm run test
 deploy:
   provider: s3
   access_key_id: AKIAJDLZCSMH4NV2722Q
@@ -15,3 +14,5 @@ deploy:
   on:
     repo: micahgodbolt/rwd-summit
     branch: master
+script:
+- npm run test
