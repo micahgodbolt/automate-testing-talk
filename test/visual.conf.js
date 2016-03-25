@@ -132,5 +132,5 @@ exports.config = {
 };
 if (!process.env.LOCAL) {
   exports.config.user = 'micahgodbolt2';
-  exports.config.key = 'process.env.browserstack';
+  exports.config.key = process.env.browserstack;
 }
