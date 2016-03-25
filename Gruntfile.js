@@ -165,10 +165,10 @@ module.exports = function(grunt) {
    ]);
 
  grunt.registerTask('test', [
-   "webdriver:behavioral",
-   "webdriver:visual",
    "sasslint",
    "mocha",
+   "webdriver:visual",
+   "webdriver:behavioral",
    "perfbudget"
    ]);
 
