@@ -37,7 +37,12 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+      'browser' : 'Chrome',
+      'browser_version' : '49.0',
+      'os' : 'OS X',
+      'os_version' : 'El Capitan',
+      'resolution' : '1280x1024',
+      'debug': true
     }],
     //
     // ===================
@@ -128,12 +133,12 @@ exports.config = {
     // Gets executed after all tests are done. You still have access to all global variables from
     // the test.
     after: function(failures, pid) {
-        console.log('finish up the tests');
+        console.log('\n finish up the tests');
     },
     //
     // Gets executed after all workers got shut down and the process is about to exit. It is not
     // possible to defer the end of the process using a promise.
     onComplete: function() {
-        console.log("\nSelenium process ended. Test suite complete");
+        console.log("\n Visual Test suite complete");
     }
 };

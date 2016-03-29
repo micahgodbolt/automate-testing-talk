@@ -136,7 +136,7 @@ module.exports = function(grunt) {
         url: "https://s3-us-west-2.amazonaws.com/rwd-summit/index.html",
         locale: "en_GB",
         strategy: "desktop",
-        threshold: 80
+        threshold: 40
       }
     },
     mobile: {
@@ -144,7 +144,7 @@ module.exports = function(grunt) {
         url: "https://s3-us-west-2.amazonaws.com/rwd-summit/index.html",
         locale: "en_GB",
         strategy: "mobile",
-        threshold: 80
+        threshold: 40
       }
     }
   }
@@ -168,7 +168,8 @@ module.exports = function(grunt) {
    "webdriver:visual",
    "webdriver:behavioral",
    "perfbudget",
-   "pagespeed"
+   "pagespeed:desktop",
+   "pagespeed:mobile"
    ]);
 
 };
