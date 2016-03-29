@@ -3,3 +3,4 @@ bower_components/
 node_modules
 public/js/_bower.js
 public/css/style.css
+config.js

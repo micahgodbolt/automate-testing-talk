@@ -1,4 +1,9 @@
+var config = require('../config');
+
 exports.config = {
+
+    user: 'micahgodbolt2',
+    key:  config.key ? config.key : process.env.browserstack,
 
     updateJob: true,
     //
@@ -49,7 +54,7 @@ exports.config = {
     //
     // Shorten url command calls by setting a base url. If your url parameter starts with "/"
     // the base url gets prepended.
-    baseUrl: process.env.LOCAL ? 'http://localhost:8000' : 'https://s3-us-west-2.amazonaws.com/rwd-summit',
+    baseUrl: 'https://s3-us-west-2.amazonaws.com/rwd-summit',
     //
     // Default timeout for all waitForXXX commands.
     waitforTimeout: 1000,
@@ -120,8 +125,3 @@ exports.config = {
         console.log("\nSelenium process ended. Test suite complete");
     }
 };
-
-if (!process.env.LOCAL) {
-  exports.config.user = 'micahgodbolt2';
-  exports.config.key = process.env.browserstack;
-}

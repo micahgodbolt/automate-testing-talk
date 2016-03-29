@@ -109,9 +109,6 @@ module.exports = function(grunt) {
    },
 
    sasslint: {
-    options: {
-        //configFile: 'config/.sass-lint.yml',
-    },
     target: ['sass/partials/*.scss']
   },
 
@@ -159,6 +156,7 @@ module.exports = function(grunt) {
    'connect',
    'watch'
    ]);
+
  grunt.registerTask('build', [
    'sass',
    'bower_concat'

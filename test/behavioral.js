@@ -7,7 +7,7 @@ describe("Shopping Cart", function() {
 
 	it("should return the correct size and quantity", function() {
 		return browser
-      .click('[href="our-product.html"]')
+      .click('.learn-more')
       .click('//*[@id="size-select"]/option[2]')
       .setValue('#quantity-select', 23)
       .click('#buy-now')
