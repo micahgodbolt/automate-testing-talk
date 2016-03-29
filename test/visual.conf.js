@@ -5,7 +5,7 @@ try {
 exports.config = {
 
     user: 'micahgodbolt2',
-    key:  config.key ? config.key : process.env.browserstack,
+    key:  config ? config.key : process.env.browserstack,
 
     updateJob: true,
     //
