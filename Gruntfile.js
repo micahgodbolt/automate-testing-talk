@@ -118,10 +118,10 @@ module.exports = function(grunt) {
         url: 'https://s3-us-west-2.amazonaws.com/rwd-summit/index.html',
         key: 'A.b00a893630f1df8f23606b6f93fab125',
         budget: {
-          SpeedIndex: '2000',
-          render: '2000',
+          SpeedIndex: '2500',
+          render: '2500',
           requestsDoc: '15',
-          bytesIn: '1500000'
+          bytesIn: '1600000'
         }
       }
     }
