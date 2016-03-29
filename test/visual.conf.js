@@ -1,5 +1,7 @@
-var config = require('../config');
-
+try {
+    var config = require('../config');
+} catch (ex) {
+}
 exports.config = {
 
     user: 'micahgodbolt2',
