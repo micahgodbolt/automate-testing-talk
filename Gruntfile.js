@@ -167,7 +167,8 @@ module.exports = function(grunt) {
    "mocha",
    "webdriver:visual",
    "webdriver:behavioral",
-   "perfbudget"
+   "perfbudget",
+   "pagespeed"
    ]);
 
 };
