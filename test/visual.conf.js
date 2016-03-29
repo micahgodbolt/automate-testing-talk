@@ -64,7 +64,7 @@ exports.config = {
         webdrivercss: {
             screenshotRoot: "./test/visual/shots",
             failedComparisonsRoot: "./test/visual/shots/diffs",
-            misMatchTolerance: 0.05,
+            misMatchTolerance: 0.15,
             updateBaseline: false
         }
     },
