@@ -1,17 +1,15 @@
 language: node_js
 node_js:
 - 4.3.1
+branches:
+  only:
+    - master
 before_install:
 - sudo apt-get install graphicsmagick
 script:
 - npm run build
 - npm run deploy
 - npm run test
-
-branches:
-  only:
-    - master
-    
 deploy:
   provider: s3
   region: us-west-2
