@@ -12,6 +12,7 @@
 - Functional Testing
   - [Mocha](https://mochajs.org/)
   - [Chai](http://chaijs.com/)
+  - [Chai as Promised](https://github.com/domenic/chai-as-promised)
   - [PhantomJS](http://phantomjs.org/)
 - Visual Testing
   - [WebdriverIO](http://webdriver.io/)
@@ -35,5 +36,7 @@
 - [Too Many Images](https://github.com/addyosmani/tmi)
 - [Perfjankie](https://github.com/axemclion/perfjankie)
 - [Grunt PhantomCSS](https://github.com/micahgodbolt/grunt-phantomcss)
+- [Jenkins CI](https://jenkins.io/index.html)
+- [Sauce Labs](https://saucelabs.com/)
   
 
