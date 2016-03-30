@@ -95,7 +95,7 @@ module.exports = function(grunt) {
       },
       options: {
         run: true,
-        reporter: 'Nyan'
+        reporter: 'Spec'
       },
     },
 
