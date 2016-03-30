@@ -2,7 +2,7 @@ try {
     var config = require('./config.js');
     // do stuff
 } catch (ex) {
-    var config;
+    var config = {};
 
     config.username = process.env.FTP_USER;
     config.password = process.env.FTP_PASSWORD;
