@@ -1,20 +1,39 @@
-Functional Testing
-  Verify function for calculating shipping
+# Automate Your Testing and Performance Budget - RWD Summit 2016
 
-VRT
-  Mocha
-  Chai
-  webdriverIO
-  webdriverCSS
-  Selenium/Browserstack
+> by Micah Godbolt, Frontend Architect, author of [Frontend Architecture for Design Systems](http://www.amazon.com/Frontend-Architecture-Design-Systems-Sustainable-ebook/dp/B01B6WS868/ref=mt_kindle?_encoding=UTF8&me=), conference speaker, tweeting at [@micahgodbolt](https://twitter.com/micahgodbolt), writing at [Micah.Codes](https://micah.codes/), podcasting at [SassBites](https://twitter.com/sassbites)
 
-Performance Testing
+## Topics and tools used in this demo
+- Continuous Integration
+  - [Travis CI](https://travis-ci.org/)
+  - [Browserstack](https://www.browserstack.com/)
+  - [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+- Qualitative Testing
+  - [Sass Lint](https://github.com/sasstools/sass-lint)
+- Functional Testing
+  - [Mocha](https://mochajs.org/)
+  - [Chai](http://chaijs.com/)
+  - [PhantomJS](http://phantomjs.org/)
+- Visual Testing
+  - [WebdriverIO](http://webdriver.io/)
+  - [WebdriverCSS](https://github.com/webdriverio/webdrivercss)
+  - [Selenium](http://www.seleniumhq.org/)
+- Behavioral Testing (or End to End Testing)
+  - Same as Visual 
+- Performance Testing
+  - [Grunt Pagespeed](https://github.com/jrcryer/grunt-pagespeed)
+  - [Grunt Perfbudget](https://github.com/tkadlec/grunt-perfbudget)
 
-  https://github.com/axemclion/browser-perf
-  https://github.com/SlexAxton/css-colorguard
-  https://github.com/addyosmani/tmi
-  https://github.com/axemclion/perfjankie
-  https://github.com/tkadlec/grunt-perfbudget
 
-Behavioral Tests
-  Load home. click buy, select form, enter quantity, hit submit
+## Other related tools and resources
+- [Visual Regression Testing](https://visualregressiontesting.com/)
+- [Learn Visual Regression Testing](https://learn.visualregressiontesting.com/)
+- [CSS Lint](https://github.com/CSSLint/csslint)
+- [JS Hint](https://github.com/jshint/jshint)
+- [JSON Lint](https://github.com/zaach/jsonlint)
+- [Browser Perf](https://github.com/axemclion/browser-perf)
+- [CSS Colorguard](https://github.com/SlexAxton/css-colorguard)
+- [Too Many Images](https://github.com/addyosmani/tmi)
+- [Perfjankie](https://github.com/axemclion/perfjankie)
+- [Grunt PhantomCSS](https://github.com/micahgodbolt/grunt-phantomcss)
+  
+
