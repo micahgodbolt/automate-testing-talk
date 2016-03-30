@@ -5,6 +5,9 @@ before_install:
 - sudo apt-get install graphicsmagick
 script:
 - npm run build
+- npm run deploy
+after_build:
+  - npm run test
 deploy:
   provider: s3
   region: us-west-2
@@ -18,5 +21,3 @@ deploy:
   on:
     repo: micahgodbolt/rwd-summit
     branch: master
-after_deploy:
-- npm run test
