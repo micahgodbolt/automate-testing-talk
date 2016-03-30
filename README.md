@@ -5,7 +5,7 @@
 ## Topics and tools used in this demo
 - Qualitative Testing
   - [Sass Lint](https://github.com/sasstools/sass-lint)
-- Functional Testing
+- Functional Testing (or Unit Testing)
   - [Mocha](https://mochajs.org/)
   - [Chai](http://chaijs.com/)
   - [Chai as Promised](https://github.com/domenic/chai-as-promised)
