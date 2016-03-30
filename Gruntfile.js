@@ -115,7 +115,7 @@ module.exports = function(grunt) {
   perfbudget: {
     default: {
       options: {
-        url: 'http://rwd.godbolt.me/index.html',
+        url: 'http://godbolt.me/rwd/index.html',
         key: 'A.b00a893630f1df8f23606b6f93fab125',
         budget: {
           SpeedIndex: '2500',
@@ -133,7 +133,7 @@ module.exports = function(grunt) {
     },
     desktop: {
       options: {
-        url: "http://rwd.godbolt.me/index.html",
+        url: "http://godbolt.me/rwd/index.html",
         locale: "en_GB",
         strategy: "desktop",
         threshold: 40
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
     },
     mobile: {
       options: {
-        url: "http://rwd.godbolt.me/index.html",
+        url: "http://godbolt.me/rwd/index.html",
         locale: "en_GB",
         strategy: "mobile",
         threshold: 40

@@ -17,7 +17,7 @@ var config = {
     host: "godbolt.me",
     port: 21,
     localRoot: __dirname + "/public",
-    remoteRoot: "/rwd.godbolt.me/",
+    remoteRoot: "/godbolt.me/rwd",
     exclude: ['.DS_Store']
 }
 
