@@ -6,8 +6,8 @@ before_install:
 script:
 - npm run build
 - npm run deploy
-after_success:
 - npm run test
+
 deploy:
   provider: s3
   region: us-west-2
