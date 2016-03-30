@@ -121,7 +121,7 @@ module.exports = function(grunt) {
           SpeedIndex: '2500',
           render: '2500',
           requestsDoc: '15',
-          bytesIn: '1600000'
+          bytesIn: '300000'
         }
       }
     }
