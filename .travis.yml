@@ -6,7 +6,7 @@ before_install:
 script:
 - npm run build
 after_success:
-    "find build -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://godbolt.me/rwd/"
+    "find build -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://godbolt.me/rwd.godbolt.me/"
 deploy:
   provider: s3
   region: us-west-2
