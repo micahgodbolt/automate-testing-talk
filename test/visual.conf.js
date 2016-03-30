@@ -61,7 +61,7 @@ exports.config = {
     //
     // Shorten url command calls by setting a base url. If your url parameter starts with "/"
     // the base url gets prepended.
-    baseUrl: 'https://s3-us-west-2.amazonaws.com/rwd-summit',
+    baseUrl: 'http://godbolt.me/rwd',
     //
     // Default timeout for all waitForXXX commands.
     waitforTimeout: 10000,
