@@ -8,6 +8,10 @@ script:
 - npm run deploy
 - npm run test
 
+branches:
+  only:
+    - master
+    
 deploy:
   provider: s3
   region: us-west-2
