@@ -1,11 +1,15 @@
 $gray: #999;
+$black: #333;
 
 .large-up-4 {
   .column {
     img {
-      box-shadow: 4px 4px 4px #333
+      box-shadow: 4px 4px 4px $black;
     }
   }
 }
 
-.recentWork { color: $gray; text-decoration: underline; }
+.recentWork {
+  color: $gray;
+  text-decoration: underline;
+}
