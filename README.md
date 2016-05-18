@@ -1,4 +1,4 @@
-# Automate Your Testing and Performance Budget - RWD Summit 2016
+# Automate Your Testing and Performance Budget
 
 > by Micah Godbolt, Frontend Architect, author of [Frontend Architecture for Design Systems](http://www.amazon.com/Frontend-Architecture-Design-Systems-Sustainable-ebook/dp/B01B6WS868/ref=mt_kindle?_encoding=UTF8&me=), conference speaker, tweeting at [@micahgodbolt](https://twitter.com/micahgodbolt), writing at [Micah.Codes](https://micah.codes/), podcasting at [SassBites](https://twitter.com/sassbites)
 
